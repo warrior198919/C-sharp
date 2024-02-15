@@ -2,4 +2,4 @@
 
 
 int value - 100;
-Console.WriteLine(value);
+Console.WriteLine("value");
