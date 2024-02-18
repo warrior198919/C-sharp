@@ -7,20 +7,8 @@ public class Answer
 {
     static void CompareNumbers(int firstNumber, int secondNumber)
     {
-        if (firstNumber > secondNumber)
-        {
-            Console.WriteLine($"{firstNumber} больше чем {secondNumber}");
-            Console.WriteLine($"{secondNumber} меньше чем {firstNumber}");
-        }
-        else if (firstNumber < secondNumber)
-        {
-            Console.WriteLine($"{firstNumber} меньше чем {secondNumber}");
-            Console.WriteLine($"{secondNumber} больше чем {firstNumber}");
-        }
-        else
-        {
-            Console.WriteLine($"{firstNumber} равно {secondNumber}");
-        }
+        string result = (firstNumber > secondNumber) ? "больше" : (firstNumber < secondNumber) ? "меньше" : "равно";
+        Console.WriteLine($"{firstNumber} {result} чем {secondNumber}");
     }
 
     // Не удаляйте и не меняйте метод Main! 
@@ -37,7 +25,7 @@ public class Answer
         {
             // Здесь вы можете поменять значения для отправки кода на Выполнение
             firstNumber = 5;
-            secondNumber = 5;
+            secondNumber = 6;
         }
 
         // Не удаляйте строки ниже
