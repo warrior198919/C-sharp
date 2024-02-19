@@ -1,4 +1,4 @@
-﻿using Internal;
+﻿//using Internal;
 
 int i1 = 5;
 int i2 = 6;
