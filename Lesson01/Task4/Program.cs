@@ -29,3 +29,4 @@ Console.WriteLine(max);
 // int z = 6;
 // int w = x + z;
 // Console.WriteLine(w);
+// в процессе выполнения задачи выражение int "e" выдавала ошибку cd0201 при смене на int "f" ошибка исчезла (?)
