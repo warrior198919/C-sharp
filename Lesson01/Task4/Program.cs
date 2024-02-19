@@ -1,4 +1,5 @@
 ﻿//Лекции по програмированнию гири
+//Console.WriteLine("Hello world");
 int a = 6;
 int b = 7;
 int c = 9;
@@ -19,7 +20,7 @@ if (d > max)
 {
     max + d;
 }
-if (e> max)
+if (e > max)
 {
     max + e;
 }
