@@ -2,7 +2,7 @@
 int b = 7;
 int c = 9;
 int d = 4;
-//int e = 10;
+int f = 10;
 
 int max = a;
 
@@ -18,9 +18,14 @@ if (d > max)
 {
     max = d;
 }
+if (f > max)
+{
+    max = f;
+}
 Console.WriteLine(max);
 
-int a = 18;
-int b = 6;
-int c = a + b;
-Console.WriteLine(c);
+//Сумма чисел
+// int x = 18;
+// int z = 6;
+// int w = x + z;
+// Console.WriteLine(w);
