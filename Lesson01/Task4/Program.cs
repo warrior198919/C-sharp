@@ -7,10 +7,3 @@ int e = 10;
 
 int max = a;
 
-if (b > max)
-{
-    max = b;
-if (b > max)
-{
-    max = b;
-}}
