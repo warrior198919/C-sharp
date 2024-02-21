@@ -1,3 +1,3 @@
 ﻿int i = 1;
-i++;
-Console.WriteLines(i);
+int f = 8;
+Console.WriteLines(i + f);
