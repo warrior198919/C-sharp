@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alekseygraunov/Desktop/JobC#/C-shurp/Lesson01/Task1/Task1.csproj",
+      "projectUniqueName": "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/Task1.csproj",
       "projectName": "Task1",
-      "projectPath": "/Users/alekseygraunov/Desktop/JobC#/C-shurp/Lesson01/Task1/Task1.csproj",
+      "projectPath": "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/Task1.csproj",
       "packagesPath": "/Users/alekseygraunov/.nuget/packages/",
-      "outputPath": "/Users/alekseygraunov/Desktop/JobC#/C-shurp/Lesson01/Task1/obj/",
+      "outputPath": "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alekseygraunov/.nuget/NuGet/NuGet.Config"
