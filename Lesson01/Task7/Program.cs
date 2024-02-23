@@ -1,3 +1,11 @@
-﻿int i = 1;
-int f = 8;
-Console.WriteLines(i + f);
+﻿int [] arr = new int [5];
+arr[0] = 5;
+arr[1] = 7;
+arr[2] = 5;
+arr[3] = 4;
+arr[4] = 3;
+Console.Writeline(arr[0]);
+Console.Writeline(arr[1]);
+Console.Writeline(arr[2]);
+Console.Writeline(arr[3]);
+Console.Writeline(arr[4]);
