@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Lesson01/Task1/obj/Debug/net7.0/Task1.assets.cache
