@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/Task1.csproj": {}
+    "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\Task1.csproj": {}
   },
   "projects": {
-    "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/Task1.csproj": {
+    "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\Task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/Task1.csproj",
+        "projectUniqueName": "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\Task1.csproj",
         "projectName": "Task1",
-        "projectPath": "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/Task1.csproj",
-        "packagesPath": "/Users/alekseygraunov/.nuget/packages/",
-        "outputPath": "/Volumes/Macintosh/Рабочий Стол/GeekBrain/ДЗ/JobC#/C-shurp/Lesson01/Task1/obj/",
+        "projectPath": "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\Task1.csproj",
+        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alekseygraunov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.406/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
