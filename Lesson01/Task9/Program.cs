@@ -8,5 +8,5 @@ while (i < n)
     {
         Console.WriteLine($"{array[i]} ");
     }
-    i = i = +1;
+    i = i + 1;
 }
