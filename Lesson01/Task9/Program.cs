@@ -4,7 +4,7 @@ int i = 0;
 
 while (i < n)
 {
-    if (array[i] % 2 == 0)
+    if(array[i] % 2 == 0)
     {
         Console.WriteLine($"{array[i]} ");
     }
