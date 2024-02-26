@@ -15,7 +15,7 @@ int ArrayToInteger(int[] array)
     return number;
 }
 
-int[] CreateArrayRndInt(int size, int min, int max)clear
+int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] array = new int[size];
     Random rnd = new Random();
