@@ -90,3 +90,4 @@ Console.WriteLine();
 
 int countPrimeNumbers = CountPrimeNumbers(array);
 Console.WriteLine(countPrimeNumbers);
+Console.Clear();
