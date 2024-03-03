@@ -305,27 +305,29 @@ Cортировка пузырьком
 // “hello” => 2
 // “world” => 1
 
-static int GetCountVowels(string str)
-{
-    int count = 0;
-    string vowels = "aeiouy";
+// static int GetCountVowels(string str)
+// {
+//     int count = 0;
+//     string vowels = "aeiouy";
 
-    for (int i = 0; i < str.Length; i++)
-    {
-        char currentChar = str[i];
-        for (int j = 0; j < vowels.Length; j++)
-        {
-            if (vowels[j] == currentChar)
-            {
-                count++;
-            }
-        }
-    }
-    return count;
-}
+//     for (int i = 0; i < str.Length; i++)
+//     {
+//         char currentChar = str[i];
+//         for (int j = 0; j < vowels.Length; j++)
+//         {
+//             if (vowels[j] == currentChar)
+//             {
+//                 count++;
+//             }
+//         }
+//     }
+//     return count;
+// }
 
 
-Console.WriteLine("Enter the string");
-string str = Console.ReadLine()!;
+// Console.WriteLine("Введите слово");
+// string str = Console.ReadLine()!;
 
-Console.WriteLine(GetCountVowels(str));
+// Console.WriteLine(GetCountVowels(str));
+// using System;
+
