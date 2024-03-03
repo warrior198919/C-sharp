@@ -182,59 +182,150 @@ Cортировка пузырьком
 
 // Shohruh Hakimov
 
-void PrintArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i], 4}");
-    }
-}
+// void PrintArray(double[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"{array[i], 4}");
+//     }
+// }
 
-int[,] CreateMarixRndInt(int rows, int colums, int min, int max)
-{
-    int[,] array = new int[rows, colums];
-    Random rnd = new Random();
+// int[,] CreateMarixRndInt(int rows, int colums, int min, int max)
+// {
+//     int[,] array = new int[rows, colums];
+//     Random rnd = new Random();
 
-    for (int i = 0; i < array.GetLength(0); i++)
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = rnd.Next(min, max);
+//         }
+//     }
+//     return array;
+// }
+// void PrintMatrix(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{array[i, j],5}");
+//         }
+//         Console.WriteLine();
+//     }
+
+// }
+
+// double[] AverageRows(int[,] matrix)
+// {
+//     double[] array = new double[matrix.GetLength(0)];
+
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         double sum = 0;
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             sum += matrix[i, j];
+//         }
+//         double tempAverage = sum / matrix.GetLength(1);
+//         array[i] = tempAverage;
+//     }
+//     return array;
+// }
+// int[,] matr = CreateMarixRndInt(3, 4, 0, 10);
+// PrintMatrix(matr);
+// Console.WriteLine();
+// double[] mass = AverageRows( matr);
+// PrintArray(mass);
+
+//  3 марта 2024
+
+
+// Задайте массив символов (тип char []). Создайте строку из символов этого массива.
+// Указание
+// Конструктор строки вида string(char []) не использовать.
+// Пример
+// [‘a’, ‘b’, ‘c’, ‘d’] => “abcd”
+
+// string GetStringFromCharArray(char[] chars)
+// {
+//     string str = string.Empty;
+
+//     for (int i = 0; i < chars.Length; i++)
+//     {
+//         str += chars[i] + " ";
+//     }
+//     return str;
+// }
+
+// char[] charsArray = {'a', 'b', 'c', 'd'};
+// Console.WriteLine(GetStringFromCharArray(charsArray));
+
+
+// ПРИМЕР 2 (Татьяна)
+// На основе символов строки (тип string) сформир    массив
+// символов (тип char[]). Вывести массив на экран.
+
+// Указание
+// Метод строки ToCharArray() не использовать.
+// Пример
+// “Hello!” => [‘H’, ‘e’, ‘l’, ‘l’, ‘o’, ‘!’ ]
+
+// Console.WriteLine("Введите текст");
+// string str = Console.ReadLine()!;
+
+// char[] chars = StringToCharArray(str);
+// PrintArray(chars);
+
+// static char[] StringToCharArray(string str)
+// {
+//     char[] charsArray = new char[str.Length];
+
+//     for (int i = 0; i < charsArray.Length; i++)
+//     {
+//         charsArray[i] = str[i];
+//     }
+//     return charsArray;
+// }
+
+// void PrintArray(char[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"{array[i],3}");
+//     }
+// }
+
+// Пример 2 Игорь
+
+// Считать строку с консоли, состоящую из латинских букв в нижнем регистре. Выяснить, сколько среди 
+// введённых букв гласных.
+// Пример
+// “hello” => 2
+// “world” => 1
+
+static int GetCountVowels(string str)
+{
+    int count = 0;
+    string vowels = "aeiouy";
+
+    for (int i = 0; i < str.Length; i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        char currentChar = str[i];
+        for (int j = 0; j < vowels.Length; j++)
         {
-            array[i, j] = rnd.Next(min, max);
+            if (vowels[j] == currentChar)
+            {
+                count++;
+            }
         }
     }
-    return array;
-}
-void PrintMatrix(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write($"{array[i, j],5}");
-        }
-        Console.WriteLine();
-    }
-
+    return count;
 }
 
-double[] AverageRows(int[,] matrix)
-{
-    double[] array = new double[matrix.GetLength(0)];
 
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        double sum = 0;
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            sum += matrix[i, j];
-        }
-        double tempAverage = sum / matrix.GetLength(1);
-        array[i] = tempAverage;
-    }
-    return array;
-}
-int[,] matr = CreateMarixRndInt(3, 4, 0, 10);
-PrintMatrix(matr);
-Console.WriteLine();
-double[] mass = AverageRows( matr);
-PrintArray(mass);
+Console.WriteLine("Enter the string");
+string str = Console.ReadLine()!;
+
+Console.WriteLine(GetCountVowels(str));
