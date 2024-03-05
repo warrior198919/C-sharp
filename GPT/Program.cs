@@ -1,52 +1,52 @@
 ﻿// Семинары 2 марта 2024 Андрей Булгаков
 // Администратор
 
-int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
-{
-    int[,] matrix = new int[rows, columns];
-    Random rnd = new Random();
+// int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
+// {
+//     int[,] matrix = new int[rows, columns];
+//     Random rnd = new Random();
 
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i, j] = rnd.Next(min, max);
-        }
-    }
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = rnd.Next(min, max);
+//         }
+//     }
 
-    return matrix;
-}
+//     return matrix;
+// }
 
-void PrintMatrix(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write($"{matrix[i, j],5}");
-        }
-        Console.WriteLine();
-    }
-}
+// void PrintMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write($"{matrix[i, j],5}");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
-void ReplaceEvenIdxElemToSquare(int[,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i += 2)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j += 2)
-        {
-            matrix[i, j] *= matrix[i, j];
-        }
-    }
-}
+// void ReplaceEvenIdxElemToSquare(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i += 2)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j += 2)
+//         {
+//             matrix[i, j] *= matrix[i, j];
+//         }
+//     }
+// }
 
-int[,] array2d = CreateMatrixRndInt(3, 4, 0, 10);
-PrintMatrix(array2d);
+// int[,] array2d = CreateMatrixRndInt(3, 4, 0, 10);
+// PrintMatrix(array2d);
 
-Console.WriteLine();
+// Console.WriteLine();
 
-ReplaceEvenIdxElemToSquare(array2d);
-PrintMatrix(array2d);
+// ReplaceEvenIdxElemToSquare(array2d);
+// PrintMatrix(array2d);
 
 // Задайте двумерный массив. Найдите сумму элементов, 
 // находящихся на главной диагонали (с индексами 
@@ -257,3 +257,48 @@ PrintMatrix(array2d);
 // Console.WriteLine(GetCountVowels(str));
 // using System;
 
+using System;
+
+class UserInputToCompileForTest
+{
+    public static int FindElementByPosition(int[,] array, int x, int y)
+    {
+        if (ValidatePosition(array, x, y))
+        {
+            return array[x - 1, y - 1];
+        }
+        else
+        {
+            return -1; // Значение, указывающее на отсутствие элемента
+        }
+    }
+
+    public static bool ValidatePosition(int[,] array, int x, int y)
+    {
+        int rowCount = array.GetLength(0);
+        int colCount = array.GetLength(1);
+
+        return x >= 1 && x <= rowCount && y >= 1 && y <= colCount;
+    }
+
+    public static void PrintResult(int[,] numbers, int x, int y)
+    {
+        if (ValidatePosition(numbers, x, y))
+        {
+            int result = FindElementByPosition(numbers, x, y);
+            Console.WriteLine($"Значение элемента на позиции ({x}, {y}): {result}");
+        }
+        else
+        {
+            if (x < 1 || x > numbers.GetLength(0))
+            {
+                Console.WriteLine("Позиция по рядам выходит за пределы массива");
+            }
+
+            if (y < 1 || y > numbers.GetLength(1))
+            {
+                Console.WriteLine("Позиция по колонкам выходит за пределы массива");
+            }
+        }
+    }
+}
