@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\root\\.nuget\\packages\\": {}
+    "C:\\Users\\root.COGRANDL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\Task1.csproj",
+      "projectUniqueName": "C:\\Users\\root.COGRANDL\\Desktop\\C-sharp\\C-sharp\\lesson01\\task1\\Task1.csproj",
       "projectName": "Task1",
-      "projectPath": "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\Task1.csproj",
-      "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\root\\Desktop\\C#\\C-sharp\\Lesson01\\Task1\\obj\\",
+      "projectPath": "C:\\Users\\root.COGRANDL\\Desktop\\C-sharp\\C-sharp\\lesson01\\task1\\Task1.csproj",
+      "packagesPath": "C:\\Users\\root.COGRANDL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\root.COGRANDL\\Desktop\\C-sharp\\C-sharp\\lesson01\\task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\root.COGRANDL\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
