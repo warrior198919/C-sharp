@@ -2,6 +2,9 @@
 // Найдите количество чисел, которые оканчиваются на 1 и делятся нацело на 7.
 // Пример[1 5 11 21 81 4 0 91 2 3] => 2
 
+Console.Clear();
+
+
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] array = new int[size];
