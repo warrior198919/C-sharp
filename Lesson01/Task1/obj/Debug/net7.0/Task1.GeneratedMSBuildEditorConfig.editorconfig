@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Task1
-build_property.ProjectDir = c:\Users\root.COGRANDL\Desktop\C-sharp\C-sharp\Lesson01\Task1\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = /Users/alekseygraunov/Documents/GeekBrain/GeekBrain/ДЗ/C-sharp-main/C-sharp/Lesson01/Task1/
